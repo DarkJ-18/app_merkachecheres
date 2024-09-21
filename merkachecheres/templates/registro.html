@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+  <body>
+    <div class="registro">
+      <div class="iniciar-sesion">
+        <p class="txt-iniciar-sesion">Iniciar sesión en su lugar</p>
+        <div class="icon-x"><img class="icons" src="img/icons.svg" /></div>
+      </div>
+      <div class="txt-crear-cuenta"><div class="text-wrapper">Crear una cuenta</div></div>
+      <div class="text-box-nombre">
+        <div class="frame"><div class="label">Nombre completo</div></div>
+        <div class="div"></div>
+      </div>
+      <div class="text-box-correo">
+        <div class="label-wrapper"><div class="label">Email</div></div>
+        <div class="div"></div>
+        <div class="error-message">Email Incorrecto</div>
+      </div>
+      <div class="frame-2">
+        <div class="text-box-confirmar">
+          <div class="frame-3">
+            <div class="label-2">Confirmar Contraseña</div>
+            <div class="password-hide-see"></div>
+          </div>
+          <div class="div"></div>
+          <div class="error-message-2">Contraseña Incorrecto</div>
+        </div>
+        <div class="text-box-contrasea">
+          <div class="frame-3">
+            <div class="label-2">Contraseña</div>
+            <div class="password-hide-see"></div>
+          </div>
+          <div class="div"></div>
+          <div class="error-message-2">Contraseña Incorrecto</div>
+        </div>
+      </div>
+      <div class="btn-iniciar-sesion"><div class="txt-signin">Crear cuenta</div></div>
+      <div class="check-box-terminos">
+        <img class="img" src="img/check-box.svg" />
+        <p class="txt-terminos">
+          <span class="span">Al crear una cuenta, acepta los </span>
+          <span class="text-wrapper-2">Términos de uso</span>
+          <span class="span"> y la </span>
+          <span class="text-wrapper-2">Política de privacidad.</span>
+        </p>
+      </div>
+      <div class="check-box-marketing">
+        <img class="img" src="img/check-box-2.svg" />
+        <p class="txt-marketing">
+          Quiero recibir correos electrónicos sobre el producto, actualizaciones de funciones, eventos y promociones de
+          marketing.
+        </p>
+      </div>
+      <div class="divisor">
+        <div class="divider"></div>
+        <div class="txt-OR">OR</div>
+        <div class="divider"></div>
+      </div>
+      <div class="frame-4">
+        <div class="social-media-signup">
+          <div class="frame-5">
+            <img class="img" src="img/image.svg" />
+            <div class="text-wrapper-3">Continuar con Google</div>
+          </div>
+        </div>
+        <div class="social-media-signup">
+          <div class="frame-6">
+            <img class="social-media-logo" src="img/social-media-logo.svg" />
+            <div class="text-wrapper-3">Continuar con Facebook</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

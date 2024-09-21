@@ -1,0 +1,73 @@
+{% load crispy_forms_tags%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <div class="login">
+        <div class="txt-login">
+            <div class="frame">
+                <div class="text-wrapper">Iniciar Sesión</div>
+            </div>
+            <div class="icon-x"><img class="icons" src="img/icons.svg" /></div>
+        </div>
+        <div class="div">
+            <div class="frame-2">
+                <div class="label">Email</div>
+            </div>
+            <div class="text-field"></div>
+            <div class="error-message">Email Incorrecto</div>
+        </div>
+        <div class="div">
+            <div class="frame-2">
+                <div class="label">Contraseña</div>
+                <div class="password-hide-see">
+                    <img class="icon" src="img/icon.svg" />
+                    <div class="text-wrapper-2">Hide</div>
+                </div>
+            </div>
+            <div class="text-field"></div>
+            <div class="error-message">Contraseña Incorrecto</div>
+        </div>
+        <div class="crear-cuenta">
+            <p class="txt-crear-cuenta">
+                <span class="span">¿No tienes una cuenta?</span>
+                <span class="text-wrapper-3">&nbsp;</span>
+                <span class="text-wrapper-4">Inscribirse</span>
+            </p>
+        </div>
+        <div class="divisor">
+            <div class="divider"></div>
+            <div class="text-wrapper-5">OR</div>
+            <div class="divider"></div>
+        </div>
+        <div class="btn-iniciar-sesion">
+            <div class="txt-signin">Iniciar Sesion</div>
+        </div>
+        <div class="redes-sociales">
+            <div class="frame-wrapper">
+                <div class="frame-3">
+                    <img class="social-media-logo" src="img/image.svg" />
+                    <div class="continue-with">Continuar con Facebook</div>
+                </div>
+            </div>
+            <div class="div-wrapper">
+                <div class="frame-4">
+                    <img class="img" src="img/social-media-logo.svg" />
+                    <div class="continue-with-google">Continuar con Google</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

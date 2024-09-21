@@ -1,0 +1,399 @@
+{% load crispy_forms_tags%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleguide.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <div class="landing-page">
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <div class="middle-nav-wrapper">
+                    <div class="middle-nav">
+                        <div class="logo">
+                            <div class="text-wrapper">MERKA CHECHERES</div>
+                        </div>
+                        <div class="frame">
+                            <div class="div-wrapper">
+                                <div class="div">Inicio</div>
+                            </div>
+                            <div class="butttons-primary-wrapper">
+                                <div class="butttons-primary">
+                                    <div class="button-text">Categorías</div>
+                                    <img class="img-wrapper" src="{% static 'img/' %}" />
+                                </div>
+                            </div>
+                            <div class="div-wrapper">
+                                <div class="div">Catálogo</div>
+                            </div>
+                        </div>
+                        <div class="buscar">
+                            <div class="text-wrapper-2">Busca cualquier cosa...</div>
+                        </div>
+                        <div class="frame-2">
+                            <div class="iniciar-crear-cuenta">
+                                <div class="button-text-wrapper">
+                                    <div class="button-text-2">Iniciar Sesion</div>
+                                </div>
+                                <div class="button-text-wrapper">
+                                    <div class="button-text-2">Crear Cuenta</div>
+                                </div>
+                            </div>
+                            <div class="icons">
+                                <img class="shopping-cart-simple" src="{% static 'img/Heart.png' %}" />
+                                <div class="shopping-cart-simple">
+                                    <div class="overlap-group">
+                                        <img class="vector-3" src="{% static 'img/ShoppingCartSimple.png' %}" />
+                                        <div class="frame-3">
+                                            <div class="text-wrapper-3">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="widgets">
+                <div class="frame-4">
+                    <div class="overlap-group-wrapper">
+                        <div class="overlap-group-2">
+                            <div class="rectangulo"></div>
+                            <div class="rectangulo-2"></div>
+                            <div class="rectangulo-3"></div>
+                            <p class="descubre-productos">
+                                DESCUBRE PRODUCTOS ÚNICOS<br />
+                                A PRECIOS QUE TE SORPRENDERÁN.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="p">
+                        Únete a nuestra comunidad para comprar y vender de manera fácil, segura y sostenible, mientras
+                        cuidas el
+                        planeta y encuentras tesoros únicos.
+                    </p>
+                    <div class="butttons-primary-2">
+                        <div class="button-text-3">Explora ahora</div>
+                    </div>
+                    <div class="frame-5">
+                        <img src="{% static 'img/publicidad1.jpg' %}" alt="Publicidad" class="frame-5">
+                    </div>
+                </div>
+                <div class="publicidad"></div>
+                <div class="publicidad-2">
+                    <div class="frame-6"></div>
+                    <div class="frame-7"></div>
+                </div>
+            </div>
+        </header>
+        <div class="mejores-vendedores">
+            <div class="heading">
+                <div class="overlap-group-3">
+                    <div class="rectangulo-4"></div>
+                    <div class="text-wrapper-4">Mejores Vendedores</div>
+                </div>
+            </div>
+            <div class="arrrow-wrapper">
+                <div class="arrrow">
+                    <img class="flecha-izquierda" src="{% static 'img/' %}" />
+                    <div class="frame-8"></div>
+                    <div class="frame-9"></div>
+                    <div class="frame-10"></div>
+                    <div class="frame-11"></div>
+                    <div class="frame-12"></div>
+                    <img class="flecha-derecha" src="{% static 'img/' %}" />
+                </div>
+            </div>
+        </div>
+        <div class="categorias">
+            <div class="heading-2">
+                <div class="overlap-group-4">
+                    <div class="rectangulo-4"></div>
+                    <div class="text-wrapper-5">Buscar por Categoría</div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="overlap">
+                    <div class="items">
+                        <div class="frame-13">
+                            <img class="frame-14" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-6">Computador</div>
+                        </div>
+                        <div class="frame-15">
+                            <div class="frame-16"></div>
+                            <div class="text-wrapper-7">SmartPhone</div>
+                        </div>
+                        <div class="frame-15">
+                            <div class="frame-17"></div>
+                            <div class="text-wrapper-7">Headphones</div>
+                        </div>
+                        <div class="frame-15">
+                            <div class="frame-18"></div>
+                            <div class="text-wrapper-7">Accesorios</div>
+                        </div>
+                        <div class="frame-15">
+                            <div class="frame-19"></div>
+                            <div class="text-wrapper-7">Camaras</div>
+                        </div>
+                        <div class="frame-15">
+                            <div class="frame-20"></div>
+                            <div class="text-wrapper-7">TV &amp; Hogar</div>
+                        </div>
+                    </div>
+                    <img class="arrow" src="{% static 'img/' %}" />
+                </div>
+            </div>
+        </div>
+        <div class="explorar-productos">
+            <div class="productos">
+                <div class="left-contents">
+                    <div class="butttons-primary-3">
+                        <div class="button-text-4">Explorar todos los productos</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="frame-21">
+                        <div class="butttons-primary-4">
+                            <div class="button-text-5">25% OFF</div>
+                        </div>
+                    </div>
+                    <div class="img-2"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-2">
+                    <div class="img-3"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-3">
+                    <div class="overlap-group-5">
+                        <div class="img-4"></div>
+                        <div class="content-2">
+                            <div class="frame-22">
+                                <img class="star" src="{% static 'img/' %}" />
+                                <div class="text-wrapper-8">(876)</div>
+                            </div>
+                            <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                            <div class="precio">
+                                <div class="text-wrapper-10">250.000</div>
+                            </div>
+                        </div>
+                        <div class="BG"></div>
+                        <div class="butttons-primary-5">
+                            <div class="img-wrapper"><img class="group" src="{% static 'img/' %}" /></div>
+                            <div class="button-text-6">Añadir al carrito</div>
+                        </div>
+                        <div class="butttons-primary-6">
+                            <div class="img-wrapper"><img class="heart" src="{% static 'img/' %}" /></div>
+                            <button class="button">Like</button>
+                        </div>
+                        <div class="butttons-primary-7">
+                            <img class="img-wrapper" src="{% static 'img/' %}" /> <button
+                                class="button">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-4">
+                    <div class="img-5"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-5">
+                    <div class="img-6"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-6">
+                    <div class="img-7"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-7">
+                    <div class="img-8"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-8">
+                    <div class="img-9"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlap-wrapper">
+                    <div class="overlap-group-5">
+                        <div class="img-10"></div>
+                        <div class="content-2">
+                            <div class="frame-22">
+                                <img class="star" src="{% static 'img/' %}" />
+                                <div class="text-wrapper-8">(876)</div>
+                            </div>
+                            <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                            <div class="precio">
+                                <div class="text-wrapper-10">250.000</div>
+                            </div>
+                        </div>
+                        <div class="BG"></div>
+                        <div class="butttons-primary-5">
+                            <div class="img-wrapper"><img class="group" src="{% static 'img/' %}" /></div>
+                            <div class="button-text-6">Añadir al carrito</div>
+                        </div>
+                        <div class="butttons-primary-6">
+                            <div class="img-wrapper"><img class="heart" src="{% static 'img/' %}" /></div>
+                            <button class="button">Like</button>
+                        </div>
+                        <div class="butttons-primary-7">
+                            <img class="img-wrapper" src="{% static 'img/' %}" /> <button
+                                class="button">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-9">
+                    <div class="img-11"></div>
+                    <div class="content">
+                        <div class="frame-22">
+                            <img class="star" src="{% static 'img/' %}" />
+                            <div class="text-wrapper-8">(876)</div>
+                        </div>
+                        <p class="text-wrapper-9">Portable Wshing Machine, 11lbs capacity Model 18NMF...</p>
+                        <div class="precio">
+                            <div class="text-wrapper-10">250.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heading-3">
+                    <div class="overlap-2">
+                        <div class="rectangulo-5"></div>
+                        <div class="text-wrapper-11">Explora nuestros productos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="overlap-3">
+                <div class="frame-23">
+                    <div class="frame-24">
+                        <div class="frame-25">
+                            <div class="text-wrapper-12">Sobre Nosotros</div>
+                            <div class="inicio-cat-logo-de">Inicio<br />Catálogo de productos<br />Cómo
+                                funciona<br />Contacto</div>
+                        </div>
+                        <div class="frame-25">
+                            <div class="text-wrapper-12">Enlaces Útiles</div>
+                            <div class="inicio-cat-logo-de">Inicio<br />Catálogo de productos<br />Cómo
+                                funciona<br />Contacto</div>
+                        </div>
+                        <div class="frame-25">
+                            <div class="text-wrapper-12">Soporte al Cliente</div>
+                            <p class="text-wrapper-13">
+                                Preguntas Frecuentes (FAQ)<br />Políticas de Devolución<br />Términos y
+                                Condiciones<br />Política de
+                                Privacidad<br />Centro de Ayuda o Soporte
+                            </p>
+                        </div>
+                        <div class="frame-25">
+                            <div class="text-wrapper-12">Contacto</div>
+                            <div class="text-wrapper-13">mercachecheres@gmail.com<br />+57 323 58545 852</div>
+                        </div>
+                    </div>
+                    <div class="frame-26">
+                        <p class="text-wrapper-14">
+                            © 2024 Merkachécheres. Todos los derechos reservados. Los productos, imágenes y
+                            descripciones publicados
+                            son propiedad de sus respectivos dueños. Merkachécheres no se hace responsable por la
+                            precisión del
+                            contenido publicado por los usuarios. Consulta nuestros términos y condiciones para más
+                            información.
+                        </p>
+                        <div class="frame-27"></div>
+                    </div>
+                </div>
+                <div class="frame-28">
+                    <div class="frame-29">
+                        <p class="text-wrapper-15">
+                            Únete a nuestra comunidad y recibe descuentos y noticias directamente en tu correo
+                        </p>
+                    </div>
+                    <div class="frame-30">
+                        <div class="text-field">
+                            <div class="email"><img class="group-2" src="{% static 'img/' %}" /></div>
+                            <div class="inputs">
+                                <div class="text-wrapper-16">Ingresa tu Correo Electronico</div>
+                            </div>
+                        </div>
+                        <div class="butttons-secondary">
+                            <div class="button-text-7">Suscríbete ahora</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
