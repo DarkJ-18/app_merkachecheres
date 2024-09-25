@@ -179,25 +179,25 @@
         "kind": 5,
         "importPath": "app_merkachecheres.settings",
         "description": "app_merkachecheres.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'merkachecheres',\n    \"crispy_forms\",\n    \"crispy_bootstrap5\", #Boostrap 5",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'merkachecheres',\n    \"crispy_forms\",\n   # \"crispy_bootstrap5\", #Boostrap 5",
         "detail": "app_merkachecheres.settings",
         "documentation": {}
     },
     {
-        "label": "CRISPY_ALLOWED_TEMPLATE_PACKS",
+        "label": "#CRISPY_ALLOWED_TEMPLATE_PACKS",
         "kind": 5,
         "importPath": "app_merkachecheres.settings",
         "description": "app_merkachecheres.settings",
-        "peekOfCode": "CRISPY_ALLOWED_TEMPLATE_PACKS = \"bootstrap5\"\nCRISPY_TEMPLATE_PACK = \"bootstrap5\"\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
+        "peekOfCode": "#CRISPY_ALLOWED_TEMPLATE_PACKS = \"bootstrap5\"\n#CRISPY_TEMPLATE_PACK = \"bootstrap5\"\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
         "detail": "app_merkachecheres.settings",
         "documentation": {}
     },
     {
-        "label": "CRISPY_TEMPLATE_PACK",
+        "label": "#CRISPY_TEMPLATE_PACK",
         "kind": 5,
         "importPath": "app_merkachecheres.settings",
         "description": "app_merkachecheres.settings",
-        "peekOfCode": "CRISPY_TEMPLATE_PACK = \"bootstrap5\"\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "peekOfCode": "#CRISPY_TEMPLATE_PACK = \"bootstrap5\"\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
         "detail": "app_merkachecheres.settings",
         "documentation": {}
     },
@@ -350,7 +350,7 @@
         "kind": 5,
         "importPath": "merkachecheres.urls",
         "description": "merkachecheres.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login/', views.login, name='login'),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login/', views.login, name='login'),\n    path('registro/', views.registro, name='registro'),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
         "detail": "merkachecheres.urls",
         "documentation": {}
     },
@@ -359,7 +359,7 @@
         "kind": 2,
         "importPath": "merkachecheres.views",
         "description": "merkachecheres.views",
-        "peekOfCode": "def index(request):\n    #return HttpResponse(\"Index\")\n    return render(request, \"index.html\")\ndef login(request):\n    return render(request, \"login.html\")",
+        "peekOfCode": "def index(request):\n    #return HttpResponse(\"Index\")\n    return render(request, \"index.html\")\ndef login(request):\n    return render(request, \"login.html\")\ndef registro(request):\n    return render(request, \"registro.html\")",
         "detail": "merkachecheres.views",
         "documentation": {}
     },
@@ -368,7 +368,16 @@
         "kind": 2,
         "importPath": "merkachecheres.views",
         "description": "merkachecheres.views",
-        "peekOfCode": "def login(request):\n    return render(request, \"login.html\")",
+        "peekOfCode": "def login(request):\n    return render(request, \"login.html\")\ndef registro(request):\n    return render(request, \"registro.html\")",
+        "detail": "merkachecheres.views",
+        "documentation": {}
+    },
+    {
+        "label": "registro",
+        "kind": 2,
+        "importPath": "merkachecheres.views",
+        "description": "merkachecheres.views",
+        "peekOfCode": "def registro(request):\n    return render(request, \"registro.html\")",
         "detail": "merkachecheres.views",
         "documentation": {}
     },
