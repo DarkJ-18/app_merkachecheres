@@ -7,13 +7,16 @@
 /* 5. Explorar nuestros productos */
 /* 6. Footer */
 
+
+/* Login */
+
+
 /* ///////////////////////// */
 /* Falta */
 /* imagen*/
 /* corregir */
 
 
-/* Login */
 /* Registro */
 
 
@@ -57,7 +60,7 @@
 }
 
 .landing_page .middle_nav_wrapper {
-    width: 1440px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -307,23 +310,26 @@
 
 .landing_page .header {
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 461px;
     align-items: center;
     justify-content: center;
     gap: 24px;
     position: relative;
     background-color: transparent;
+    padding: 10px;
 }
 
 .landing_page .widgets {
     display: flex;
-    width: 1387px;
+    width: 100%;
     height: 433px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
     padding: 10px;
     position: relative;
+    text-align: center;
 }
 
 .landing_page .frame_4 {
@@ -342,14 +348,14 @@
 
 .landing_page .overlap_group_wrapper {
     position: relative;
-    width: 422px;
-    height: 100px;
+    width: 100%;
+    height: 126px;
     overflow: hidden;
 }
 
 .landing_page .overlap_group_2 {
     position: relative;
-    width: 420px;
+    width: 489px;
     height: 104px;
     top: -1px;
 }
@@ -358,7 +364,7 @@
     width: 226px;
     height: 31px;
     top: 69px;
-    left: 2px;
+    left: 97px;
     transform: rotate(-2.27deg);
     position: absolute;
     background-color: #b6d09b;
@@ -410,13 +416,13 @@
     font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
+    margin: 0;
 }
 
 /* Falta */
 .landing_page .btn_primary_2 {
     display: inline-flex;
     height: 44px;
-    width: 14;
     gap: 8px;
     padding: 8px;
     position: relative;
@@ -428,7 +434,7 @@
     box-shadow: 0px 4px 4px #00000040;
     align-items: center;
     justify-content: center;
-
+    border-radius: 3px;
 }
 
 .landing_page .btn_text-3 {
@@ -601,19 +607,19 @@
 }
 
 .landing_page .frame-9 {
-    background-image: url('https://images.unsplash.com/photo-1485206283729-2ca7d035185e?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1541534401786-2077eed87a74?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 .landing_page .frame-10 {
-    background-image: url('https://images.unsplash.com/photo-1485206283729-2ca7d035185e?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1523983254932-c7e6571c9d60?q=80&w=2102&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 .landing_page .frame-11 {
-    background-image: url('https://images.unsplash.com/photo-1485206283729-2ca7d035185e?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1530577197743-7adf14294584?q=80&w=2081&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 .landing_page .frame-12 {
-    background-image: url('https://images.unsplash.com/photo-1485206283729-2ca7d035185e?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 /* Flechas */
@@ -794,8 +800,6 @@
     width: 100%;
     height: 870px;
     min-height: 100%;
-    border: 1px solid;
-    border-color: #000000;
     overflow: hidden;
 }
 
@@ -1633,3 +1637,7 @@
     letter-spacing: 0;
     line-height: normal;
 }
+
+
+
+/* Login */
