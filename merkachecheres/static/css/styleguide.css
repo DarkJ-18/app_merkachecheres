@@ -17,6 +17,8 @@
     --labels-font-family-regular: "Roboto-Regular", Helvetica;
     --labels-font-family-medium: "Roboto-Medium", Helvetica;
     --labels-font-weight-400: 400;
+    --labels-font-size-14: 14px;
+    --labels-font-size-18: 18px;
     --labels-font-size-16: 16px;
     --labels-font-size-24: 24px;
     --labels-letter-spacing-0: 0px;
@@ -28,6 +30,7 @@
     --color-gris-20: rgba(102, 102, 102, 0.2);
     --color-gris-border-35: rgba(102, 102, 102, 0.35);
     --color-gris-60: rgba(102, 102, 102, 0.6);
+    --color-gris-80: rgba(102, 102, 102, 0.8);
     --color-gris: rgba(102, 102, 102, 1);
     --color-rojo: rgba(240, 20, 47, 1);
     --color-sombra: rgba(0, 0, 0, 0.12);

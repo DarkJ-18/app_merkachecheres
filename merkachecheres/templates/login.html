@@ -18,24 +18,24 @@
             <div class="frame_iniciar_sesion">
                 <div class="text_wrapper">Iniciar Sesión</div>
             </div>
-            <div class="icon_x"><img class="icons" {% comment %} src="img/icons.svg" {% endcomment %} />X</div>
+            <div class="icon_x"><img class="icons" {% comment %} src="{% static 'img/' %}" {% endcomment %} />X</div>
         </div>
         <div class="div">
             <div class="frame_email">
                 <div class="label email">Email</div>
             </div>
-            <div class="text_field_error_email"></div>
+            <div class="text_field error_email"></div>
             <div class="error_message">Email Incorrecto</div>
         </div>
         <div class="div">
             <div class="frame_password">
                 <div class="label password">Contraseña</div>
                 <div class="password_hide_see">
-                    <img class="icon" src="img/icon.svg" />
+                    <img class="icon" src="{% static 'img/icon.png' %}" />
                     <div class="text_wrapper_2">Hide</div>
                 </div>
             </div>
-            <div class="text_field_error_password"></div>
+            <div class="text_field error_password"></div>
             <div class="error_message">Contraseña Incorrecto</div>
         </div>
         <div class="crear_cuenta">
@@ -56,13 +56,13 @@
         <div class="redes_sociales">
             <div class="frame_wrapper">
                 <div class="frame_btn_redes_facebook">
-                    <img class="social_media_logo" src="img/image.svg" />
+                    <img class="social_media_logo" src="{% static 'img/' %}" />
                     <div class="continue_with">Continuar con Facebook</div>
                 </div>
             </div>
             <div class="div_wrapper">
                 <div class="frame_btn_redes_google">
-                    <img class="img" src="img/social-media-logo.svg" />
+                    <img class="img" src="{% static 'img/' %}" />
                     <div class="continue_with_google">Continuar con Google</div>
                 </div>
             </div>
