@@ -1541,4 +1541,31 @@
 
 }
 
-.login .
+.login .crear_cuenta {
+    display: flex;
+    width: 503px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 2px;
+    position: relative;
+}
+
+.login .txt_crear_cuenta {
+    position: relative;
+    width: fit-content;
+    font-family: var(--labels-font-family-regular);
+    font-weight: var(--labels-font-weight-400);
+    font-size: var(--labels-font-size-14);
+    letter-spacing: var(--labels-letter-spacing-0);
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.login .span {
+    color: var(--color-gris);
+}
+
+.login .text_wrapper_4 {
+    color: var(--color-negro);
+    text-decoration: underline;
+}
