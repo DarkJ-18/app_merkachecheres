@@ -20,7 +20,7 @@
           class="close-btn"
           onclick="window.location.href='{% url 'index' %}'">x</button>
         <h2>Crear una cuenta</h2>
-        <form method="POST">
+        <form method="POST" action="{% url 'index' %}">
           {% csrf_token %}
           <div class="form-group">
             <label for="full-name">Nombre completo</label>
@@ -95,5 +95,6 @@
         </div>
       </div>
     </div>
+    <script src="{% static 'js/libreria.js' %}"></script>
   </body>
 </html>
