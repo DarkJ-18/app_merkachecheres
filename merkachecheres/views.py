@@ -11,3 +11,6 @@ def login(request):
 
 def registro(request):
     return render(request, "registro.html")
+
+def completardatos(request):
+    return render(request, "completardatos.html")

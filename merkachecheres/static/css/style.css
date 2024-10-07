@@ -1,20 +1,19 @@
 /* -----------Indice -------- */
 /* landing_page */
-/* 1. Barra de  navegacion */
-/* 2. Header */
-/* 3. Mejores Vendedores */
-/* 4. Categorias */
-/* 5. Explorar nuestros productos */
-/* 6. Footer */
-
+    /* 1. Barra de  navegacion */
+    /* 2. Header */
+    /* 3. Mejores Vendedores */
+    /* 4. Categorias */
+    /* 5. Explorar nuestros productos */
+    /* 6. Footer */
 /* Login */
+/* Registro */
+/* Completa datos Page */
 
 /* ///////////////////////// */
 /* Falta */
 /* imagen*/
 /* corregir */
-
-/* Registro */
 
 * {
     margin: 0;
@@ -71,7 +70,7 @@
     align-items: center;
     justify-content: center;
     gap: 26px;
-    padding: 10px8;
+    padding: 10px;
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -299,7 +298,7 @@
 .landing_page .hero_secction {
     display: flex;
 
-    
+
     align-items: center;
     justify-content: center;
     gap: 24px;
@@ -503,7 +502,8 @@ main {
 }
 
 /* 3. Mejores Vendedores */
-.landing_page .mejores-vendedores, .items {
+.landing_page .mejores-vendedores,
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -526,10 +526,10 @@ main {
 }
 
 .landing_page .overlap_group-3 {
-    
+
     width: 80%;
     height: 55px;
-   
+
 }
 
 .landing_page .rectangulo_4 {
@@ -610,8 +610,6 @@ main {
 }
 
 /* 4. Categorias */
-
-
 
 .landing_page .categorias {
     display: flex;
@@ -852,7 +850,9 @@ main {
     gap: 21px 43px;
     padding: 10px;
 }
-.landing_page .contenedor-productos, .items {
+
+.landing_page .contenedor-productos,
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -954,20 +954,11 @@ main {
     display: flex;
     width: 104px;
     height: 16px;
-    align-items: flex-start;
+    align-items: center;
     gap: 4px;
     position: relative;
 }
 
-.landing_page .star {
-    position: relative;
-    width: 70px;
-    height: 16px;
-}
-
-.landing_page .stars {
-    position: relative;
-}
 
 .landing_page .text_wrapper-8 {
     position: relative;
@@ -1390,8 +1381,6 @@ main {
     line-height: normal;
 }
 
-
-
 /* Login */
 
 .body_login {
@@ -1538,28 +1527,28 @@ main {
     font-size: var(--labels-font-size-14);
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--color-blanco);
     margin-bottom: 10px;
 }
 
 .btn-facebook {
-    background-color: #4267B2;
+    background-color: var(--color-redes-azul);
     color: var(--color-blanco);
     font-size: 16px;
 }
 
 .btn-facebook:hover {
-    background-color: #36549f;
+    background-color: var(--color-redes-azul-hover);
 }
 
 .btn-google {
-    background-color: #db4a39;
-    color: white;
+    background-color: var(--color-redes-rojo);
+    color: var(--color-blanco);
     font-size: 16px;
 }
 
 .btn-google:hover {
-    background-color: #c4382d;
+    background-color: var(--color-redes-rojo-hover);
 }
 
 /* Registro */
@@ -1620,7 +1609,6 @@ main {
     border-radius: 4px;
     font-size: 14px;
     outline: none;
-    /* transition: border-color 0.3s ease; */
 }
 
 .form-group input[type="text"]:focus,
@@ -1630,7 +1618,7 @@ main {
 }
 
 .error-message {
-    color: red;
+    color: var(--color-rojo);
     font-size: var(--labels-font-size-14);
     margin-top: 5px;
 }
@@ -1670,7 +1658,6 @@ main {
     cursor: pointer;
     border-radius: 8px;
     margin-bottom: 15px;
-    /* transition: background-color 0.3s ease; */
 }
 
 .register-container .btn-register:hover {
@@ -1692,7 +1679,6 @@ main {
     cursor: pointer;
     margin-bottom: 8px;
     border-radius: 5px;
-    /* transition: background-color 0.3s ease; */
 }
 
 /* corregir */
@@ -1704,4 +1690,133 @@ main {
     display: flex;
     justify-content: center;
     font-size: var(--labels-font-size-14);
+}
+
+/*Completa datos Page*/
+
+.bodyCompletarDatosPage {
+    background-color: #FFF !important;
+}
+
+.completaDatosGeneralContainer {
+    /*Esto centra los elemtentos en general*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.tittileContainer {
+    display: flex;
+    width: 513px;
+    padding-left: 15px;
+    margin-bottom: 40px;
+}
+
+#CompletaDatostittle {
+    padding-left: -50rem;
+}
+
+.buttonSaveContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 56px;
+    padding: var(--Multiples-8, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Multiples-8, 8px);
+    margin-left: 175px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceLevelContainer {
+    margin-top: 10px;
+}
+
+.redText {
+    /*Textos en rojo*/
+    color: red;
+}
+
+/*Esto hace la transicion en los placeholders*/
+#nameInput::placeholder,
+#emailInput::placeholder,
+#phoneInput::placeholder,
+#directionInput::placeholder,
+#levelInput::placeholder {
+    color: #888;
+    transition: opacity 0.2s ease;
+    padding-left: 5px;
+    /*Esto hace que el placeholder no se pegue a la izquierda del input*/
+}
+
+#nameInput:focus::placeholder,
+#emailInput:focus::placeholder,
+#phoneInput:focus::placeholder,
+#directionInput:focus::placeholder,
+#levelInput:focus::placeholder {
+    opacity: 0;
+    /* El placeholder desaparece al hacer clic */
+}
+
+/*Esto hace la transicion en los placeholders*/
+#nameInput,
+#emailInput,
+#phoneInput,
+#directionInput,
+#levelInput {
+    border-radius: var(--font-size-size-xs, 12px);
+    border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    width: 513px;
+    height: 56px;
+}
+
+.nameField,
+.emailFieldLabel,
+.LevelSellerFieldLabel,
+.directionFieldLabel,
+.phoneFieldLabel {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#profilePhoto {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 75px;
+}
+
+#saveButton {
+    color: var(--Blanco, #fff);
+    display: flex;
+    width: 168px;
+    height: 56px;
+    padding: var(--Multiples-8, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Multiples-8, 8px);
+    border-radius: 6px;
+    border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background: var(--Verde, #92b869);
+    cursor: pointer;
+}
+
+.checkBoxesContainer {
+    border-radius: var(--font-size-size-xs, 12px);
+    border: 1px solid var(--gris-border-35, rgba(102, 102, 102, 0.35));
+    background: var(--Blanco, #fff);
+}
+
+.containerCheckBoxes {
+    margin: 10.1px;
 }

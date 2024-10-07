@@ -38,5 +38,9 @@
     --color-gris: rgba(102, 102, 102, 1);
     --color-rojo: rgba(240, 20, 47, 1);
     --color-sombra: rgba(0, 0, 0, 0.12);
-
+    --color-redes-rojo: rgba(219, 74, 57, 1) ;
+    --color-redes-rojo-hover: rgba(196, 56, 45, 1);
+    --color-redes-azul-hover: rgba(54, 84, 159, 1);
+    --color-redes-azul: rgba(66, 103, 178, 1) ;
+    
 }

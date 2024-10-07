@@ -350,7 +350,7 @@
         "kind": 5,
         "importPath": "merkachecheres.urls",
         "description": "merkachecheres.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login/', views.login, name='login'),\n    path('registro/', views.registro, name='registro'),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login/', views.login, name='login'),\n    path('registro/', views.registro, name='registro'),\n    path('completardatos/', views.completardatos, name='completardatos'),\n] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
         "detail": "merkachecheres.urls",
         "documentation": {}
     },
@@ -359,7 +359,7 @@
         "kind": 2,
         "importPath": "merkachecheres.views",
         "description": "merkachecheres.views",
-        "peekOfCode": "def index(request):\n    #return HttpResponse(\"Index\")\n    return render(request, \"index.html\")\ndef login(request):\n    return render(request, \"login.html\")\ndef registro(request):\n    return render(request, \"registro.html\")",
+        "peekOfCode": "def index(request):\n    #return HttpResponse(\"Index\")\n    return render(request, \"index.html\")\ndef login(request):\n    return render(request, \"login.html\")\ndef registro(request):\n    return render(request, \"registro.html\")\ndef completardatos(request):\n    return render(request, \"completardatos.html\")",
         "detail": "merkachecheres.views",
         "documentation": {}
     },
@@ -368,7 +368,7 @@
         "kind": 2,
         "importPath": "merkachecheres.views",
         "description": "merkachecheres.views",
-        "peekOfCode": "def login(request):\n    return render(request, \"login.html\")\ndef registro(request):\n    return render(request, \"registro.html\")",
+        "peekOfCode": "def login(request):\n    return render(request, \"login.html\")\ndef registro(request):\n    return render(request, \"registro.html\")\ndef completardatos(request):\n    return render(request, \"completardatos.html\")",
         "detail": "merkachecheres.views",
         "documentation": {}
     },
@@ -377,7 +377,16 @@
         "kind": 2,
         "importPath": "merkachecheres.views",
         "description": "merkachecheres.views",
-        "peekOfCode": "def registro(request):\n    return render(request, \"registro.html\")",
+        "peekOfCode": "def registro(request):\n    return render(request, \"registro.html\")\ndef completardatos(request):\n    return render(request, \"completardatos.html\")",
+        "detail": "merkachecheres.views",
+        "documentation": {}
+    },
+    {
+        "label": "completardatos",
+        "kind": 2,
+        "importPath": "merkachecheres.views",
+        "description": "merkachecheres.views",
+        "peekOfCode": "def completardatos(request):\n    return render(request, \"completardatos.html\")",
         "detail": "merkachecheres.views",
         "documentation": {}
     },

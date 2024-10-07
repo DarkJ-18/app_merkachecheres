@@ -7,6 +7,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('login/', views.login, name='login'),
     path('registro/', views.registro, name='registro'),
+    path('completardatos/', views.completardatos, name='completardatos'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
