@@ -296,10 +296,10 @@
 
 /* 2. Header */
 
-.landing_page .header {
+.landing_page .hero_secction {
     display: flex;
-    width: 100%;
-    height: 461px;
+
+    
     align-items: center;
     justify-content: center;
     gap: 24px;
@@ -435,7 +435,7 @@
     line-height: normal;
 }
 
-.landing_page .frame-5 {
+.landing_page .frame_5_publicidad {
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -458,7 +458,7 @@
     background-position: 50% 50%;
 }
 
-.landing_page .publicidad-2 {
+.landing_page .publicidad_2 {
     display: flex;
     flex-direction: column;
     width: 462px;
@@ -471,10 +471,10 @@
     margin-right: -1px;
 }
 
-.landing_page .frame-6 {
+.landing_page .frame_6_publicidad {
     position: relative;
     flex: 0 0 auto;
-    width: 453px;
+    width: 100%;
     height: 152px;
     margin-left: -5.5px;
     margin-right: -5.5px;
@@ -484,7 +484,7 @@
     background-position: 50% 50%;
 }
 
-.landing_page .frame-7 {
+.landing_page .frame_7_publicidad {
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -495,7 +495,19 @@
     background-position: 50% 50%;
 }
 
+main {
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* 3. Mejores Vendedores */
+.landing_page .mejores-vendedores, .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .landing_page .mejores-vendedores {
     display: flex;
@@ -503,17 +515,10 @@
     width: 100%;
     align-items: center;
     gap: 24px;
-    padding: 10px;
+    padding: 24px;
     position: relative;
-    flex: 0 0 auto;
-
 }
 
-.landing_page .heading {
-    width: auto;
-    height: 67px;
-
-}
 
 .landing_page .heading-3 {
     width: 100%;
@@ -521,18 +526,15 @@
 }
 
 .landing_page .overlap_group-3 {
-    position: relative;
+    
     width: 80%;
     height: 55px;
-    top: 15px;
-    left: 0;
-    margin: 0 auto;
+   
 }
 
 .landing_page .rectangulo_4 {
     width: 320px;
     height: 40px;
-    transform: translateX(-50%) rotate(-0.096deg);
     position: absolute;
     background-color: #b6d09b;
     box-shadow: 0px 4px 4px #00000040;
@@ -542,7 +544,7 @@
 
 .landing_page .text_wrapper-4 {
     position: absolute;
-    top: 50%;
+    top: 13%;
     transform: translate(-50%, -50%);
     font-family: "Roboto-Regular", Helvetica;
     font-weight: 400;
@@ -560,7 +562,8 @@
     align-items: center;
     position: relative;
     width: 100%;
-    padding: inherit;
+    /* padding: inherit;
+    top: 30px; */
 }
 
 .landing_page .arrrow {
@@ -608,36 +611,25 @@
 
 /* 4. Categorias */
 
+
+
 .landing_page .categorias {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 335px;
+    height: 348px;
     align-items: flex-start;
     padding: 10px;
-    position: relative;
 }
 
-.landing_page .heading-2 {
-    position: relative;
-    align-self: stretch;
+.landing_page .heading-3 {
     width: 100%;
-    height: 74px;
-}
-
-.landing_page .overlap_group-4 {
-    position: absolute;
-    width: 316px;
-    height: 45px;
-    top: 14px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 50%;
 }
 
 .landing_page .text_wrapper-5 {
     position: relative;
     width: 100%;
-    top: 6px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #000;
@@ -647,11 +639,20 @@
     text-align: center;
 }
 
+.landing_page .rectangulo_6 {
+    width: 398px;
+    height: 42px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-1.93deg);
+    position: absolute;
+    background-color: #b6d09b;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
 .landing_page .category {
     position: relative;
     align-self: stretch;
-    width: 100%;
-    height: 236px;
+    margin: 15px;
     display: flex;
     justify-content: center;
 }
@@ -677,7 +678,6 @@
     left: 0;
 }
 
-.landing_page .frame-13,
 .landing_page .frame-15 {
     display: flex;
     flex-direction: column;
@@ -768,12 +768,10 @@
     gap: 40px;
     padding: 10px;
     position: relative;
-    flex: 1;
 }
 
 /* corregir */
 .landing_page .productos {
-    width: 100%;
     height: auto;
     min-height: 100%;
     overflow: hidden;
@@ -849,12 +847,15 @@
 }
 
 .landing_page .contenedor-productos {
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 21px 43px;
     padding: 10px;
+}
+.landing_page .contenedor-productos, .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .landing_page .product {
@@ -1170,7 +1171,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 426px;
     align-items: center;
     justify-content: flex-end;
@@ -1591,8 +1591,9 @@
     right: -297px;
     position: relative;
     cursor: pointer;
-    
+
 }
+
 .register-box h2 {
     text-align: center;
     font-size: var(--labels-font-size-22);
