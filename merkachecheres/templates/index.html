@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,7 +9,6 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/styleguide.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 
 <body>
@@ -38,14 +38,14 @@
                             <div class="buscar">
                                 <div class="text_wrapper_2">Busca cualquier cosa...</div>
                             </div>
-                            <div class="frame-2">
+                            <div class="frame_2">
                                 <div class="iniciar_crear_cuenta">
-                                    <div class="button_text_wrapper">
-                                        <button class="btn btn_text_2"
+                                    <div class="btn_login">
+                                        <button class="button_text_wrapper"
                                             onclick="window.location.href='{% url 'login' %}'">Iniciar Sesion</button>
                                     </div>
-                                    <div class="button_text_wrapper">
-                                        <button class="btn btn_text_2"
+                                    <div class="btn_registro">
+                                        <button class="button_text_wrapper"
                                             onclick="window.location.href='{% url 'registro' %}'">Crear Cuenta</button>
                                     </div>
                                 </div>
@@ -86,8 +86,8 @@
                             cuidas el
                             planeta y encuentras tesoros únicos.
                         </p>
-                        <div class="btn_primary_2">
-                            <button class="btn buttons_primary_2"
+                        <div class="">
+                            <button class="button_text_wrapper"
                                 onclick="window.location.href='{% url 'login' %}'">Explorar ahora</button>
                         </div>
                         <div class="frame_5_publicidad ">
@@ -105,7 +105,7 @@
                     <div class="overlap_group-3">
                         <div class="rectangulo_4 text_wrapper-4">Mejores Vendedores</div>
                     </div>
-                    <div class="arrrow-wrapper">
+                    <div class="arrrow_wrapper">
                         <div class="arrrow">
                             <img class="flecha-izquierda" />
                             <div class="seller_card frame_8"></div>
@@ -118,7 +118,7 @@
                     </div>
             </section>
             <section class="categorias">
-                <div class="heading-3">
+                <div class="">
                         <div class="rectangulo_6 text_wrapper-5">Buscar por Categoría</div>
                 </div>
                 <div class="category">
@@ -155,8 +155,8 @@
             </section>
             <section class="explorar-productos">
                 <div class="productos">
-                    <div class="heading-3">
-                        <div class="overlap-2">
+                    <div class="heading_3">
+                        <div class="overlap_2">
                             <div class="rectangulo_5 text_wrapper-11">Explora nuestros productos</div>
                         </div>
                     </div>
