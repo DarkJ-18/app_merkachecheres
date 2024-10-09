@@ -38,7 +38,7 @@
 .landing_page .navigation {
     width: 100%;
     align-items: flex-start;
-    box-shadow: 0px 4px 4px #00000040;
+    box-shadow: 0px 4px 4px var(--color-sombra);
     display: flex;
     flex-direction: column;
     height: 108px;
@@ -69,11 +69,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 26px;
-    padding: 10px;
+    gap: 20px;
     position: relative;
     align-self: stretch;
-    width: 100%;
+    
 }
 
 .landing_page .logo {
@@ -317,7 +316,7 @@
     position: relative;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0px 4px 4px #00000040;
+    box-shadow: 0px 4px 4px 4px var(--color-sombra);
 }
 
 .landing_page .overlap_group_wrapper {
@@ -495,6 +494,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 
 .landing_page .mejores-vendedores {
@@ -601,14 +601,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 348px;
+    height: 380px;
     align-items: flex-start;
-    padding: 10px;
 }
 
-.landing_page .heading_3 {
-    width: 100%;
-    height: 50%;
+.landing_page .heading_categ {
+    margin-bottom: 20px;
 }
 
 .landing_page .text_wrapper-5 {
@@ -636,7 +634,7 @@ main {
 .landing_page .category {
     position: relative;
     align-self: stretch;
-    margin: 15px;
+    margin: 40px;
     display: flex;
     justify-content: center;
 }
@@ -645,13 +643,12 @@ main {
     position: relative;
     width: 100%;
     max-width: 1420px;
-    height: 236px;
     display: flex;
     justify-content: center;
 }
 
 .landing_page .items {
-    display: flex;
+   /*  display: flex;
     width: 100%;
     max-width: 1326px;
     height: 236px;
@@ -659,7 +656,14 @@ main {
     gap: 18px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 18px;
+    position: relative;
 }
 
 .landing_page .frame-15 {
@@ -732,14 +736,6 @@ main {
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-}
-
-.landing_page .arrow {
-    /* position: absolute;
-    width: 1420px; 
-    height: 36px;
-    top: 100px;
-    left: 0; */
 }
 
 /* 5. Explorar nuestros productos */
