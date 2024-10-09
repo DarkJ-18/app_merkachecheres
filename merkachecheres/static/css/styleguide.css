@@ -29,6 +29,7 @@
     --labels-font-style: normal;
     --color-blanco: rgba(255, 255, 255);
     --color-verde: rgba(146, 184, 105);
+    --color-verde-hover: rgba(146, 184, 105, 1);
     --color-negro: rgba(0, 0, 0);
     --color-gris-20: rgba(102, 102, 102, 0.2);
     --color-gris-25: rgba(102, 102, 102, 0.25);

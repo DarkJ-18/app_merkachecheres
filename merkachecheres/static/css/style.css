@@ -206,6 +206,15 @@
     flex: 0 0 auto;
 }
 
+.btn_login button:hover,
+.btn_registro button:hover,
+.btn_explorar button:hover {
+
+    background-color: #92b869; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .landing_page .button_text_wrapper {
      display: inline-flex;
     flex: 0 0 auto;
