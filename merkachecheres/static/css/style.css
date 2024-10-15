@@ -9,6 +9,7 @@
 /* Login */
 /* Registro */
 /* Completa datos Page */
+/* Responsive */
 
 /* ///////////////////////// */
 /* Falta */
@@ -1324,7 +1325,9 @@ main {
 }
 
 /* Falta */
-.landing_page .group-2 {}
+.landing_page .group-2 {
+
+}
 
 .landing_page .text-field {
     display: flex;
