@@ -366,6 +366,17 @@ header {
     max-width: 250px; /* Ajusta el ancho máximo según tus necesidades */
 }
 
+.landing_page .iniciar_crear_cuenta {
+    display: inline-flex;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 5px 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
 .text_wrapper_2 {
     border: none; /* Sin borde por defecto */
     font-size: 14px; /* Tamaño de fuente */
