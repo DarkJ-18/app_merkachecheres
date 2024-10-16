@@ -46,3 +46,166 @@
     --color-redes-azul: rgba(66, 103, 178, 1) ;
     
 }
+
+/* Responsive */
+
+
+/* Responsive navbar */
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+    }
+
+    .navbar a {
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 19vh;
+        background: var(--color-verde);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+}
+
+
+
+/* Teléfonos pequeños */
+@media (max-width: 320px) {
+    .landing_page .text_wrapper {
+        font-size: 24px; /* Ajuste de tamaño de fuente */
+    }
+
+    .landing_page .middle_nav {
+        gap: 10px; /* Reducir espacio entre elementos */
+    }
+
+    .landing_page .buscar {
+        width: 100%;
+    }
+    
+    .landing_page .hero_secction {
+        height: auto; /* Ajustar altura para móviles pequeños */
+    }
+}
+
+/* Teléfonos medianos */
+@media (min-width: 321px) and (max-width: 480px) {
+    .landing_page .text_wrapper {
+        font-size: 28px;
+    }
+
+    .landing_page .middle_nav {
+        gap: 15px;
+    }
+
+    .landing_page .buscar {
+        width: 90%;
+    }
+
+    .landing_page .productos {
+        gap: 10px; /* Reducir espacio entre productos */
+    }
+
+    .landing_page .contenedor-productos .product {
+        width: 200px; /* Ajustar tamaño de producto */
+    }
+}
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {
+    .landing_page .text_wrapper {
+        font-size: 32px;
+    }
+
+    .landing_page .buscar {
+        width: 80%;
+    }
+
+    .landing_page .productos {
+        gap: 15px;
+    }
+
+    .landing_page .contenedor-productos .product {
+        width: 220px;
+    }
+}
+
+/* Tablets pequeñas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .landing_page .middle_nav {
+        gap: 20px;
+    }
+
+    .landing_page .buscar {
+        width: 70%;
+    }
+
+    .landing_page .contenedor-productos .product {
+        width: 240px;
+    }
+}
+
+/* Tablets grandes */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .landing_page .middle_nav {
+        gap: 25px;
+    }
+
+    .landing_page .buscar {
+        width: 60%;
+    }
+
+    .landing_page .contenedor-productos .product {
+        width: 250px;
+    }
+}
+
+/* Laptops y monitores */
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .landing_page .middle_nav {
+        gap: 30px;
+    }
+
+    .landing_page .buscar {
+        width: 50%;
+    }
+
+    .landing_page .contenedor-productos .product {
+        width: 270px;
+    }
+}
+
+/* Monitores grandes */
+@media (min-width: 1921px) {
+    .landing_page .middle_nav {
+        gap: 40px;
+    }
+
+    .landing_page .contenedor-productos .product {
+        width: 300px;
+    }
+}
