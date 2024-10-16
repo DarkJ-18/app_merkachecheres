@@ -9,11 +9,48 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/styleguide.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="landing_page">
+
         <header>
+            <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Merka Checheres</span></a>
+            
+            <ul class="navbar">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+            
+            <div class="main_menu">
+                <div class="buscar">
+                    <input type="text" class="text_wrapper_2" placeholder="Busca cualquier cosa...">
+                </div>
+                <div class="btn_login">
+                    <button class="button_text_wrapper" onclick="window.location.href='{% url 'login' %}'">Iniciar Sesión</button>
+                </div>
+                <div class="btn_registro">
+                    <button class="button_text_wrapper" onclick="window.location.href='{% url 'registro' %}'">Crear Cuenta</button>
+                </div>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+        
+
+
+
+
+
+{% comment %}         <header>
             <div class="navigation">
                 <div class="navigation_wrapper">
                     <div class="middle_nav_wrapper">
@@ -65,7 +102,7 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header> {% endcomment %}
         <main>
             <section class="hero_secction">
                 <div class="widgets">
@@ -397,5 +434,7 @@
             
         </footer>
     </div>
+
+    <script type="text/javascript" src="{% static 'js/libreria.js' %}"></script>
 </body>
 </html>

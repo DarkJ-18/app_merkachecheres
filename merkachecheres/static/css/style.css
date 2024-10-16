@@ -37,9 +37,11 @@
     background-color: var(--color-beige-30);
 }
 
-/* 1. Barra de  navegacion */
 
-.landing_page .navigation {
+
+/* 1. Header Barra de  navegacion */
+
+/* .landing_page .navigation {
     width: 100%;
     align-items: flex-start;
     box-shadow: 0px 4px 4px var(--color-sombra);
@@ -237,7 +239,7 @@
 }
 
 
-/* falta */
+/* falta 
 .landing_page .icons {
     display: flex;
     width: 100px;
@@ -295,9 +297,173 @@
     letter-spacing: var(--body-tiny-600-letter-spacing);
     line-height: var(--body-tiny-600-line-height);
     font-style: var(--body-tiny-600-font-style);
+} */
+
+
+/* Estilos del header anterior adaptados */
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px var(--color-sombra); /* Sombra como en el header anterior */
+    padding: 28px 12%;
+    transition: all .50s ease;
 }
 
-/* 2. Header */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--color-verde);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+    color: var(--color-negro);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--color-negro);
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: var(--color-verde);
+}
+
+.navbar a.active {
+    color: var(--color-verde);
+}
+
+.main_menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Barra de búsqueda */
+.buscar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    max-width: 250px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+.text_wrapper_2 {
+    border: none; /* Sin borde por defecto */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #7e7d7c; /* Color del texto */
+    padding: 8px 12px; /* Espaciado interno */
+    width: 100%; /* Utiliza todo el ancho del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    transition: border 0.3s ease; /* Transición suave para el borde */
+    box-shadow: 0px 4px 4px var(--color-sombra); /* Estilo de sombra anterior */
+}
+
+/* Estilo al enfocar el input */
+.text_wrapper_2:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 5px var(--color-verde); /* Sombra verde al enfocar */
+    color: var(--color-negro); /* Cambia el color del texto al enfocar */
+}
+
+/* Opcional: Puedes agregar un estilo para el placeholder */
+.text_wrapper_2::placeholder {
+    color: #7e7d7c; /* Color del placeholder */
+    opacity: 1; /* Asegúrate de que el placeholder sea visible */
+}
+
+
+
+/* Botones de login y registro */
+.btn_login button, .btn_registro button {
+    background-color: #a4c482;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 2px;
+    border-color: var(--color-gris-border-35);
+    box-shadow: 0px 4px 4px var(--color-sombra); /* Sombra de los botones */
+}
+
+.btn_login button:hover, .btn_registro button:hover {
+    background-color: #92b869;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--color-negro);
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    z-index: 10001; 
+}
+
+
+/* Responsive design */
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+    }
+
+    .navbar a {
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 19vh;
+        background: var(--color-verde);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+}
+
+
+
+/* 2. no se */
 
 .landing_page .hero_secction {
     display: flex;
