@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Nueva carpeta/ProyectoKamiapp"
+		},
+		{
+			"name": "DisenoWeb",
+			"path": "../../../../../xampp/htdocs/Proyectos Web/DisenoWeb"
+		}
+	],
+	"settings": {}
+}
