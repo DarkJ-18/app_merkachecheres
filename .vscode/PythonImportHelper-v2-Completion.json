@@ -179,25 +179,7 @@
         "kind": 5,
         "importPath": "app_merkachecheres.settings",
         "description": "app_merkachecheres.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'merkachecheres',\n   # \"crispy_forms\",\n   # \"crispy_bootstrap5\", #Boostrap 5",
-        "detail": "app_merkachecheres.settings",
-        "documentation": {}
-    },
-    {
-        "label": "#CRISPY_ALLOWED_TEMPLATE_PACKS",
-        "kind": 5,
-        "importPath": "app_merkachecheres.settings",
-        "description": "app_merkachecheres.settings",
-        "peekOfCode": "#CRISPY_ALLOWED_TEMPLATE_PACKS = \"bootstrap5\"\n#CRISPY_TEMPLATE_PACK = \"bootstrap5\"\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
-        "detail": "app_merkachecheres.settings",
-        "documentation": {}
-    },
-    {
-        "label": "#CRISPY_TEMPLATE_PACK",
-        "kind": 5,
-        "importPath": "app_merkachecheres.settings",
-        "description": "app_merkachecheres.settings",
-        "peekOfCode": "#CRISPY_TEMPLATE_PACK = \"bootstrap5\"\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'merkachecheres',\n]\nMIDDLEWARE = [",
         "detail": "app_merkachecheres.settings",
         "documentation": {}
     },
